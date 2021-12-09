@@ -1,0 +1,45 @@
+body { 
+    margin: 0 auto;
+    color: $main-color; 
+    font-size: $main-size; 
+    font-family: $main-font;
+
+}
+button {
+    background-color: black;
+    color: floralwhite;
+    padding: 12px 10px;
+    width: 320px;
+    margin-bottom: 10px;
+    transition-duration: 0.4s;
+}
+
+button:hover {
+    background-color:rgb(220, 220, 220);
+    color: black;
+}
+
+h2 {
+    font-size: 24px;
+    padding-top: 30px;
+    font-weight: bold;
+}
+
+.lightboxWrapper {
+    color: floralwhite;
+    max-width: 960px;
+    padding: 20px;
+    background-color: black;
+    margin: 0px 10px;
+}
+
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 50px 10px;
+}
+
+a:hover {
+    background-color: rgb(220, 220, 220);
+}

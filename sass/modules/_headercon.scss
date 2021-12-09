@@ -1,0 +1,30 @@
+.headrBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 10px;
+}
+
+.headrtitle {
+    margin: 0 auto;
+    width: 1024;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.navCon  ul {
+    width: 800px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    margin-left: auto;
+    display: flex;
+	flex-flow: row nowrap;
+	justify-content:space-between
+}
+
+.navCon  li {
+    padding: 10px;
+    margin-top: 50px;
+}

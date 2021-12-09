@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>miniApp</title>
+</head>
+<body>
+    
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>vueTest</title>
+</head>
+<body>
+    <header class="headrBox">
+        <img src="images/mini_logo.jpg" alt="Mini Cooper">
+        <section class="navCon">
+        <ul class="mainNav">
+            <li> <a href="#">MODELS </a></li>
+            <li> <a href="#">TOOLS</a> </li>
+            <li> <a href="#">DISCOVER </a></li>
+            <li> <a href="#"> OWNERS</a> </li>
+            <li> <a href="#">FRE-OWNED </a></li>
+        </ul>
+    </section>
+    </header>
+    <main id="app">
+        <!-- this is where our dynamic data will go -->
+        <section class="productCon">
+            <thumb
+            v-on:showdata="popLightBox" 
+            v-for="item in carProfData" 
+            :piece="item" 
+            :key="item.id">
+            </thumb>
+        </section>
+        <section>
+         <lightbox class="lightbox" :class='{visible: isVisible}' :piece="currentCarItem" :key="currentCarItem"></lightbox>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="js/main.js" type="module" defer></script>
+</body>
+</html>
