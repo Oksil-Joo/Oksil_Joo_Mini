@@ -4,17 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>miniApp</title>
-</head>
-<body>
-    
-</body>
-</html><!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <title>vueTest</title>
 </head>
@@ -26,7 +15,7 @@
             <li> <a href="#">MODELS </a></li>
             <li> <a href="#">TOOLS</a> </li>
             <li> <a href="#">DISCOVER </a></li>
-            <li> <a href="#"> OWNERS</a> </li>
+            <li> <a href="#">OWNERS</a> </li>
             <li> <a href="#">FRE-OWNED </a></li>
         </ul>
     </section>
@@ -36,7 +25,7 @@
         <section class="productCon">
             <thumb
             v-on:showdata="popLightBox" 
-            v-for="item in carProfData" 
+            v-for="item in carData" 
             :piece="item" 
             :key="item.id">
             </thumb>
